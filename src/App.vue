@@ -2,27 +2,26 @@
   <div class="app">
     <div class="spacer"></div>
     <navBar />
-    <feedContainer />
+    <mainContainer />
   </div>
 </template>
 
 <script>
-import feedContainer from "./components/feedsContainer.vue";
+import mainContainer from "./components/mainContainer.vue";
 import navBar from "./components/navBar.vue";
 export default {
   name: "App",
-  components: { navBar, feedContainer },
+  components: { navBar, mainContainer },
 };
 </script>
 
 <style >
 .spacer {
-  height: 54px;
+  height: 64px;
 }
 
 .app {
   min-height: 100%;
-  overflow: hidden;
   flex-shrink: 0;
   margin: 0;
   padding: 0;

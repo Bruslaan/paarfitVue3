@@ -25,6 +25,11 @@ body {
   background-color:
     #fafafa;
   ;
+  
+}
+
+html, body {
+  overflow: hidden;
 }
 
 
