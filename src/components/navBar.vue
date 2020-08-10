@@ -1,10 +1,12 @@
 <template>
-  <div class="navBar">
+  <nav class="navBar">
     <div class="navBar__Elements">
       <logo />
-      <avatar size="30px" />
+      <div class="menu">
+        <avatar size="30px" />
+      </div>
     </div>
-  </div>
+  </nav>
 </template>
 
 <script>
@@ -20,6 +22,10 @@ export default {
 
 <style>
 .navBar {
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  width: 100%;
   display: flex;
   background-color: white;
   border-bottom: 1px solid var(--border-color);
@@ -35,5 +41,10 @@ export default {
   width: 100%;
   max-width: var(--content-width);
   padding: 0 20px;
+}
+
+.navBar .menu {
+  display: flex;
+  align-items: center;
 }
 </style>
