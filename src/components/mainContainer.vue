@@ -3,7 +3,7 @@
     <div class="main_Container">
       <div class="feeds_Container">
         <feedCreator />
-        <feed v-for="feed in 20" :key="feed" />
+        <feed v-for="feed in 5" :key="feed" />
       </div>
 
       <div class="right_Section">

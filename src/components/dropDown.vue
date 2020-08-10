@@ -5,7 +5,7 @@
       <div class="nippel"></div>
       <div class="dropDown__Container">
         <div>
-          <div class="dropDown_Button">Profi</div>
+          <div class="dropDown_Button">Profil</div>
           <div class="dropDown_Button">Favoriten</div>
           <div class="dropDown_Button">Einstellungen</div>
         </div>
