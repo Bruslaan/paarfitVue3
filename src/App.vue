@@ -17,7 +17,7 @@ export default {
 
 <style >
 .spacer {
-  height: 64px;
+  height: 54px;
 }
 
 .app {

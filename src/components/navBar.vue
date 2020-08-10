@@ -3,7 +3,9 @@
     <div class="navBar__Elements">
       <logo />
       <div class="menu">
-        <avatar size="30px" />
+        <dropDown v-slot="scope">
+          <avatar @click="scope.open" size="30px" />
+        </dropDown>
       </div>
     </div>
   </nav>
@@ -12,10 +14,12 @@
 <script>
 import logo from "./logo.vue";
 import avatar from "./avatar.vue";
+import dropDown from "./dropDown.vue";
 export default {
   components: {
     logo,
     avatar,
+    dropDown,
   },
 };
 </script>

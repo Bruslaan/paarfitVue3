@@ -2,17 +2,17 @@
   <main class="scrollable_Container">
     <div class="main_Container">
       <div class="feeds_Container">
+        <feedCreator />
         <feed v-for="feed in 20" :key="feed" />
       </div>
-      
+
       <div class="right_Section">
         <div class="bar2">
           <avatar size="50px" style="margin-bottom:10px" />
           <h2 style="margin-left:10px">Bruslan</h2>
         </div>
 
-        <div class="bar">
-        </div>
+        <div class="bar"></div>
       </div>
     </div>
   </main>
@@ -21,18 +21,20 @@
 <script>
 import feed from "./feed.vue";
 import avatar from "./avatar.vue";
+import feedCreator from "./feedCreator.vue";
 export default {
   components: {
     feed,
     avatar,
+    feedCreator,
   },
 };
 </script>
 
 <style>
-h2{
-font-family: Logo;
-font-size: 15px;
+h2 {
+  font-family: Logo;
+  font-size: 15px;
 }
 
 .bar {
@@ -41,10 +43,9 @@ font-size: 15px;
   align-items: center;
 }
 
-.bar2{
+.bar2 {
   display: flex;
   align-items: center;
-
 }
 
 .sonstige {
@@ -74,7 +75,6 @@ font-size: 15px;
   }
   .main_Container {
     justify-content: center;
-
   }
 }
 @media (min-width: 901px) {

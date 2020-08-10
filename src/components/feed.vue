@@ -1,9 +1,9 @@
 <template>
   <div class="feed_Card">
-    <img
+    <!-- <img
       class="feed_image"
       src="https://picsum.photos/600"     
-    />
+    /> -->
   </div>
 </template>
 
@@ -23,6 +23,7 @@ width: 100%;
 
 .feed_Card {
   max-height: 600px;
+  min-height: 300px;
   page-break-after: 10px;
   border-radius: 5px;
   border: 1px solid var(--border-color);
