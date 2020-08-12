@@ -21,14 +21,15 @@ code {
 body {
   --background: #f4f5f7;
   --content-width: 975px;
-  --border-color:rgb(219, 219, 219);
+  --border-color: rgb(219, 219, 219);
   background-color:
     #fafafa;
   ;
-  
+
 }
 
-html, body {
+html,
+body {
   overflow: hidden;
 }
 
@@ -37,6 +38,13 @@ html, body {
   font-family: Logo;
   src: url(./assets/fonts/PaarfitLogo.ttf);
 }
+
+.container {
+  max-width: var(--content-width);
+  margin-right: auto;
+  margin-left: auto;
+}
+
 
 /* .app {
   display: flex;

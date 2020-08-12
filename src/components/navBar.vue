@@ -3,6 +3,23 @@
     <div class="navBar__Elements">
       <logo />
       <div class="menu">
+        <router-link to="/">
+          <img
+            class="iconSize"
+            src="../assets/icons/home-solid.svg"
+            style="margin-right:20px"
+            alt="Home"
+          />
+        </router-link>
+        <router-link to="/test">
+          <img
+            class="iconSize"
+            src="../assets/icons/dumbbell-solid.svg"
+            style="margin-right:20px"
+            alt="Home"
+          />
+        </router-link>
+
         <dropDown v-slot="scope">
           <avatar @click="scope.open" size="30px" />
         </dropDown>
@@ -15,11 +32,13 @@
 import logo from "./logo.vue";
 import avatar from "./avatar.vue";
 import dropDown from "./dropDown.vue";
+import svgIcon from "./svgIcon.vue";
 export default {
   components: {
     logo,
     avatar,
     dropDown,
+    svgIcon,
   },
 };
 </script>

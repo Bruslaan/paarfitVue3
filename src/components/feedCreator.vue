@@ -1,17 +1,20 @@
 <template>
   <div class="feed_Creator" :class="{active:feed_creator_Active}">
-    <div class="text_composer" >
+    <p style="margin-bottom:20px; color:gray">Beitrag erstellen</p>
+    <div class="text_composer">
       <avatar size="40px" style="margin-right:10px" />
       <span
-        ata-placeholder="Make a new tag"
+        aria-placeholder="Make a new tag"
         placeholder="Schreibt etwas"
         class="textarea"
         role="textbox"
         contenteditable
         @focus="inputFocused"
       ></span>
+
+
     </div>
-    <button class="postButton">Posten</button>
+    <button v-if="feed_creator_Active" class="postButton">Posten</button>
   </div>
   <div v-if="feed_creator_Active" @click="closeFeedCreator" class="tab_to_close_Area_Dark"></div>
 </template>
@@ -28,7 +31,7 @@ export default {
     let feed_creator_Active = ref(false);
 
     const closeFeedCreator = () => (feed_creator_Active.value = false);
-    const inputFocused = () => feed_creator_Active.value=true;
+    const inputFocused = () => (feed_creator_Active.value = true);
     return {
       feed_creator_Active,
       closeFeedCreator,
@@ -39,23 +42,21 @@ export default {
 </script>
 
 <style>
-
-.postButton{
-cursor: pointer;
-text-decoration: none;
-border:none;
-bottom:0;
-left:0;
-right:0;
-display: block;
-width: 100%;
-background: white;
-padding:10px;
-/* border: 1px solid var(--border-color) */
-
+.postButton {
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  width: 100%;
+  background: white;
+  padding: 10px;
+  /* border: 1px solid var(--border-color) */
 }
-:hover.postButton{
-  background: rgb(245, 245, 245)
+:hover.postButton {
+  background: rgb(245, 245, 245);
 }
 
 .tab_to_close_Area_Dark {
@@ -76,7 +77,7 @@ padding:10px;
 }
 .feed_Creator {
   padding: 20px;
-  height: 100px;
+
   border: 1px solid var(--border-color);
   margin-bottom: 50px;
   background: white;
@@ -84,12 +85,10 @@ padding:10px;
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   transition: height 0.1s ease-in;
 }
- .feed_Creator.active{
+.feed_Creator.active {
   z-index: 311 !important;
-  height: 400px;
 }
 
 .input,

@@ -18,7 +18,6 @@ export default {
   components: {  },
   setup(props) {
     const size = props.size;
-
     return {
       size,
     };
