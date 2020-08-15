@@ -1,7 +1,7 @@
 <template>
   <div class="avatar__Container">
       <img
-        src="https://i.pravatar.cc/100"
+        src="https://i.pravatar.cc/600"
         loading="lazy"
         alt="Avatar"
         class="avatar"
@@ -15,13 +15,7 @@ export default {
   props: {
     size: String,
   },
-  components: {  },
-  setup(props) {
-    const size = props.size;
-    return {
-      size,
-    };
-  },
+
 };
 </script>
 

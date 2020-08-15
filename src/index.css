@@ -2,7 +2,9 @@
   margin: 0;
 }
 
-
+.debug{
+  background:red;
+}
 
 body {
   margin: 0;

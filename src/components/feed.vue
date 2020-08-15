@@ -1,7 +1,7 @@
 <template>
   <div class="feed_Card">
     <div class="feed_Content">
-      <img class="feed_Image" src="https://picsum.photos/600" />
+      <img class="feed_Image" src="https://picsum.photos/1000" />
 
       <div class="feed_Header">
         <Avatar size="40px" style="margin-right:10px" />

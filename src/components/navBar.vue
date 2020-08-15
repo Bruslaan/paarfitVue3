@@ -11,12 +11,20 @@
             alt="Home"
           />
         </router-link>
-        <router-link to="/test">
+        <router-link to="/profile">
           <img
             class="iconSize"
             src="../assets/icons/dumbbell-solid.svg"
             style="margin-right:20px"
-            alt="Home"
+            alt="Profile"
+          />
+        </router-link>
+        <router-link to="/training">
+          <img
+            class="iconSize"
+            src="../assets/icons/dumbbell-solid.svg"
+            style="margin-right:20px"
+            alt="Training"
           />
         </router-link>
 
