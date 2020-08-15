@@ -1,7 +1,7 @@
 <template>
   <nav class="navBar">
     <div class="navBar__Elements">
-      <logo />
+      <logo @click="$router.push('/')" />
       <div class="menu">
         <router-link to="/">
           <img

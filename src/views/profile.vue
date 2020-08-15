@@ -5,8 +5,16 @@
         <!-- <svg class="circular" viewBox="0 0 100 100">
           <path d="M95,50 A45,45 0 0,1 5,50 A45,45 0 0,6 90,5" />
           
-        </svg> -->
-      <img src="https://i.pravatar.cc/600" alt="Avatar" class="responsive_avatar" />
+        </svg>-->
+
+        <Suspense>
+          <template #default>
+            <img src="https://i.pravatar.cc/600" alt="Avatar" class="responsive_avatar" />
+          </template>
+          <template #fallback>
+            <Loader />
+          </template>
+        </Suspense>
       </div>
 
       <div class="profile_information">
@@ -24,17 +32,19 @@
 <script>
 import Avatar from "../components/avatar.vue";
 import progreeBar from "../components/progressBar.vue";
+import Loader from "../components/loader.vue";
 export default {
   components: {
     Avatar,
     progreeBar,
+    Loader,
   },
 };
 </script>
 
 <style>
 .circular {
-  position:relative;
+  position: relative;
   height: 300px;
   width: 300px;
   fill: none;
@@ -62,7 +72,6 @@ export default {
   padding: 10px;
 }
 .responsive_avatar {
-
   vertical-align: middle;
   width: 250px !important;
   height: 250px !important;

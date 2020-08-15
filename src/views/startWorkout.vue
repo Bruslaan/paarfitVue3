@@ -7,11 +7,11 @@
           class="leftRadius rightRadius"
         >
           <source
-            src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+            src="../assets/video1.mp4"
             type="video/mp4"
           />
           <source
-            src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+            src="../assets/video1.mp4"
             type="video/ogg"
           />Your browser does not support HTML5 video.
         </video>
@@ -30,6 +30,7 @@ export default {};
 video{
   /* max-width: var(--content-width); */
   width: 100%;
+  outline: none;
 }
 
 .leftRadius {
