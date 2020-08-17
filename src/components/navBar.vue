@@ -14,7 +14,7 @@
         <router-link to="/profile">
           <img
             class="iconSize"
-            src="../assets/icons/dumbbell-solid.svg"
+            src="../assets/icons/profile.svg"
             style="margin-right:20px"
             alt="Profile"
           />

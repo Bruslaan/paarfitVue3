@@ -1,7 +1,7 @@
 <template>
   <div class="avatar__Container">
       <img
-        src="https://i.pravatar.cc/600"
+        src="../assets/logo.png"
         loading="lazy"
         alt="Avatar"
         class="avatar"

@@ -72,6 +72,11 @@ h2 {
   .main_Container {
     justify-content: center;
   }
+  .feeds_Container{
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  
 }
 @media (min-width: 901px) {
   .right_Section {

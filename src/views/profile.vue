@@ -2,19 +2,7 @@
   <div class="container">
     <header class="profile_header">
       <div class>
-        <!-- <svg class="circular" viewBox="0 0 100 100">
-          <path d="M95,50 A45,45 0 0,1 5,50 A45,45 0 0,6 90,5" />
-          
-        </svg>-->
-
-        <Suspense>
-          <template #default>
-            <img src="https://i.pravatar.cc/600" alt="Avatar" class="responsive_avatar" />
-          </template>
-          <template #fallback>
-            <Loader />
-          </template>
-        </Suspense>
+        <img src="https://via.placeholder.com/150/f66b97" alt="Avatar" class="responsive_avatar" />
       </div>
 
       <div class="profile_information">
@@ -32,12 +20,11 @@
 <script>
 import Avatar from "../components/avatar.vue";
 import progreeBar from "../components/progressBar.vue";
-import Loader from "../components/loader.vue";
+
 export default {
   components: {
     Avatar,
     progreeBar,
-    Loader,
   },
 };
 </script>

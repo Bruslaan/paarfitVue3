@@ -24,7 +24,7 @@ export default {};
 .progress-bar-fill {
   display: block;
   height: 22px;
-  background-color:rgb(255, 132, 0);
+  background-color:gray;
   border-radius: 100px;
 
   transition: width 500ms ease-in-out;
