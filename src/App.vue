@@ -6,8 +6,8 @@
     <mainContainer>
       <router-view />
     </mainContainer>
+    <bottomNavBar />
   </div>
-  <bottomNavBar />
 </template>
 
 <script>
@@ -30,6 +30,7 @@ export default {
   flex-shrink: 0;
   margin: 0;
   padding: 0;
+  height: 100%;
   position: relative;
   overflow: hidden;
 }

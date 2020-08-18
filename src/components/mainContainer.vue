@@ -11,7 +11,7 @@ export default {};
 <style>
 .scrollable_Container {
   overflow-y: scroll;
-  height: 100%;
+  height:100%;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */

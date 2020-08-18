@@ -58,8 +58,8 @@ h2 {
 .right_Section {
   max-width: 293px;
   height: 100vh;
-  top: 30px;
-  position: sticky;
+  top: 80px;
+  position: fixed;
   position: -webkit-sticky;
   right: 0;
   width: 100%;
@@ -72,11 +72,10 @@ h2 {
   .main_Container {
     justify-content: center;
   }
-  .feeds_Container{
+  .feeds_Container {
     padding-right: 10px;
     padding-left: 10px;
   }
-  
 }
 @media (min-width: 901px) {
   .right_Section {
@@ -92,7 +91,6 @@ h2 {
   max-width: 614px;
   width: 100%;
 }
-
 
 .main_Container {
   max-width: var(--content-width);
