@@ -51,7 +51,6 @@ export default {
 <style scoped>
 .navBar {
   position: fixed;
-
   z-index: 3;
   bottom: 0;
   right: 0;
@@ -63,6 +62,7 @@ export default {
   padding:10px;
   justify-content: space-evenly;
   align-items: center;
+  overflow: hidden;
 }
 
 @media (min-width: 900px) {
@@ -76,6 +76,9 @@ export default {
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
+  padding: 0px env(safe-area-inset-right, 10px)
+  max(10px, env(safe-area-inset-bottom, 10px)) env(safe-area-inset-left, 20px);
+  
   max-width: var(--content-width);
   /* padding: 0 20px; */
 }

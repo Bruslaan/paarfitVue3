@@ -28,18 +28,23 @@ body {
     #fafafa;
   ;
 
+
 }
 
 
 .safeArea {
-  background: red;
-  padding: 10px env(safe-area-inset-right, 20px)
+  padding: 20px env(safe-area-inset-right, 20px)
   max(10px, env(safe-area-inset-bottom, 20px)) env(safe-area-inset-left, 20px);
+  background:black;
 }
 
 html,
 body {
-  overflow: hidden;
+  /* overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: auto;
+  touch-action:none;
+  background: green; */
 }
 
 

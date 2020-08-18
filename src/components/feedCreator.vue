@@ -96,6 +96,7 @@ export default {
   font-family: inherit;
   font-size: inherit;
   padding: 1px 6px;
+   border-radius: 5px;
 }
 
 .textarea {

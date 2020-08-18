@@ -99,7 +99,6 @@ h2 {
   margin-right: auto;
   margin-left: auto;
   display: flex;
-
   padding-top: 30px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;

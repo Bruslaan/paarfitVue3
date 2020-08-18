@@ -6,9 +6,8 @@
     <mainContainer>
       <router-view />
     </mainContainer>
-
-    <bottomNavBar />
   </div>
+  <bottomNavBar />
 </template>
 
 <script>
@@ -26,12 +25,12 @@ export default {
 .spacer {
   height: 54px;
 }
-
 .app {
-  min-height: 100%;
+  touch-action: none;
   flex-shrink: 0;
   margin: 0;
   padding: 0;
   position: relative;
+  overflow: hidden;
 }
 </style>

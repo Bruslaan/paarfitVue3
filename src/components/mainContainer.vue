@@ -5,16 +5,13 @@
 </template>
 
 <script>
-
-export default {
-
-};
+export default {};
 </script>
 
 <style>
 .scrollable_Container {
   overflow-y: scroll;
-  height: 100vh;
+  height: 100%;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
