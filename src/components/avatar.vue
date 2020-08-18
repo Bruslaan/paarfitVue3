@@ -1,7 +1,7 @@
 <template>
   <div class="avatar__Container">
       <img
-        src="../assets/logo.png"
+        src="https://picsum.photos/200"
         loading="lazy"
         alt="Avatar"
         class="avatar"

@@ -1,9 +1,8 @@
 <template>
-  <nav class="navBar">
+  <nav class="navBar safeArea">
     <div class="navBar__Elements">
-      <logo @click="$router.push('/')" />
       <div class="menu">
-        <router-link class="top_menu" to="/">
+        <router-link to="/">
           <img
             class="iconSize"
             src="../assets/icons/home-solid.svg"
@@ -11,7 +10,7 @@
             alt="Home"
           />
         </router-link>
-        <router-link class="top_menu" to="/profile">
+        <router-link to="/profile">
           <img
             class="iconSize"
             src="../assets/icons/profile.svg"
@@ -19,7 +18,7 @@
             alt="Profile"
           />
         </router-link>
-        <router-link class="top_menu" to="/training">
+        <router-link to="/training">
           <img
             class="iconSize"
             src="../assets/icons/dumbbell-solid.svg"
@@ -28,15 +27,13 @@
           />
         </router-link>
 
-        <dropDown v-slot="scope">
-          <avatar @click="scope.open" size="30px" />
-        </dropDown>
+
       </div>
     </div>
   </nav>
 </template>
 
-<script>
+<script >
 import logo from "./logo.vue";
 import avatar from "./avatar.vue";
 import dropDown from "./dropDown.vue";
@@ -52,37 +49,41 @@ export default {
 </script>
 
 <style scoped>
-@media (max-width: 900px) {
-  .top_menu {
+.navBar {
+  position: fixed;
+
+  z-index: 3;
+  bottom: 0;
+  right: 0;
+  left:0;
+  width: 100%;
+  display: flex;
+  background-color: white;
+  border-top: 1px solid var(--border-color);
+  padding:10px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@media (min-width: 900px) {
+  .navBar {
     display: none;
   }
 }
 
-
-.navBar {
-  position: fixed;
-  z-index: 3;
-  top: 0;
-  width: 100%;
-  display: flex;
-  background-color: white;
-  border-bottom: 1px solid var(--border-color);
-  height: 54px;
-  justify-content: center;
-  align-items: center;
-}
-
 .navBar .navBar__Elements {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   width: 100%;
   max-width: var(--content-width);
-  padding: 0 20px;
+  /* padding: 0 20px; */
 }
 
 .navBar .menu {
   display: flex;
+  width: 100%;
   align-items: center;
+  justify-content: space-evenly;
 }
 </style>

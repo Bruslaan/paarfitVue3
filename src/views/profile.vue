@@ -2,7 +2,9 @@
   <div class="container">
     <header class="profile_header">
       <div class>
-        <img src="https://via.placeholder.com/150/f66b97" alt="Avatar" class="responsive_avatar" />
+        <Modal>
+          <img src="https://picsum.photos/200" alt="Avatar" class="responsive_avatar" />
+        </Modal>
       </div>
 
       <div class="profile_information">
@@ -14,17 +16,20 @@
       </div>
     </header>
     <h1 class="headers">Statisctics</h1>
+    <Modal />
   </div>
 </template>
 
 <script>
 import Avatar from "../components/avatar.vue";
 import progreeBar from "../components/progressBar.vue";
+import Modal from "../components/modal.vue";
 
 export default {
   components: {
     Avatar,
     progreeBar,
+    Modal,
   },
 };
 </script>

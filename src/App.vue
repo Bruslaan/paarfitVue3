@@ -2,19 +2,23 @@
   <div class="app">
     <div class="spacer"></div>
     <navBar />
+    <div id="modal_Container"></div>
     <mainContainer>
       <router-view />
     </mainContainer>
+
+    <bottomNavBar />
   </div>
 </template>
 
 <script>
 import mainContainer from "./components/mainContainer.vue";
 import navBar from "./components/navBar.vue";
+import bottomNavBar from "./components/bottomNavBar.vue";
 import blog from "./views/blog.vue";
 export default {
   name: "App",
-  components: { navBar, mainContainer, blog },
+  components: { navBar, mainContainer, blog, bottomNavBar },
 };
 </script>
 

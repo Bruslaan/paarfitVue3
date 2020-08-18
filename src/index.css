@@ -30,6 +30,13 @@ body {
 
 }
 
+
+.safeArea {
+  background: red;
+  padding: 10px env(safe-area-inset-right, 20px)
+  max(10px, env(safe-area-inset-bottom, 20px)) env(safe-area-inset-left, 20px);
+}
+
 html,
 body {
   overflow: hidden;
